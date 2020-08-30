@@ -1,6 +1,6 @@
 # write for fun, can u finish alone
+import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 class LeNet(nn.Module):
@@ -40,8 +40,6 @@ class LeNet(nn.Module):
 
 
 if __name__ == '__main__':
-    import torch
-
     lenet = LeNet()
     x = torch.Tensor(100, 1, 32, 32)
     y = lenet(x)
